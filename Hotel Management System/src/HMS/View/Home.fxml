@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="560.0" prefWidth="1053.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HMS.HomeController">
+   <children>
+      <VBox prefHeight="560.0" prefWidth="275.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../Image/56e657a9c8e95_thumb900.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton onAction="#ToReservation" prefHeight="49.0" prefWidth="277.0" ripplerFill="#fca92d" text="Reservation">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_booking_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="221.0" onAction="#ToAvailableRoom" prefHeight="49.0" prefWidth="277.0" ripplerFill="#1bba97" text="Available Room">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_5_star_hotel_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="270.0" onAction="#ToCustomesInfo" prefHeight="49.0" prefWidth="277.0" ripplerFill="#2f9df2" text="Customers Info">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_user_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="319.0" onAction="#ToEmploee" prefHeight="49.0" prefWidth="277.0" text="Employee">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_employee_card_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Separator prefWidth="200.0" />
+            <JFXButton layoutX="10.0" layoutY="368.0" onAction="#Logoff" prefHeight="49.0" prefWidth="277.0" text="Logoff">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_logout_rounded_left_64px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <HBox layoutX="281.0" prefHeight="124.0" prefWidth="769.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane minWidth="-Infinity" prefHeight="115.0" prefWidth="209.0" style="-fx-background-color: #2f9df2; -fx-background-radius: 15px;">
+               <HBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </HBox.margin>
+               <children>
+                  <Label fx:id="RoomAvailable" layoutX="97.0" layoutY="9.0" prefHeight="46.0" prefWidth="96.0" text="50" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="46.0" prefHeight="46.0" prefWidth="123.0" text="Room Available" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="53.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_bedroom_32px_2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="53.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_ok_32px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" minWidth="-Infinity" prefHeight="115.0" prefWidth="214.0" style="-fx-background-color: #fca92d; -fx-background-radius: 15px;">
+               <HBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </HBox.margin>
+               <children>
+                  <Label fx:id="RoomBusy" layoutX="118.0" layoutY="9.0" prefHeight="46.0" prefWidth="96.0" text="50" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="110.0" layoutY="44.0" prefHeight="46.0" prefWidth="96.0" text="Room Busy" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="33.0" fitWidth="41.0" layoutX="65.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_bedroom_32px_2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="46.0" fitWidth="41.0" layoutX="61.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_cancel_32px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="210.0" layoutY="10.0" minWidth="-Infinity" prefHeight="115.0" prefWidth="209.0" style="-fx-background-color: #1bba97; -fx-background-radius: 15px;">
+               <HBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </HBox.margin>
+               <children>
+                  <Label fx:id="Empeloyee" layoutX="108.0" layoutY="4.0" prefHeight="46.0" prefWidth="96.0" text="50" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="108.0" layoutY="43.0" prefHeight="46.0" prefWidth="96.0" text="Employee" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="33.0" fitWidth="55.0" layoutX="64.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8_job_32px_1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton fx:id="CLOSE" ellipsisString="" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="28.0" ripplerFill="#a4a3a3" translateX="45.0" translateY="6.0">
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" size="1.9em" translateX="-3.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="PANE" layoutX="275.0" layoutY="128.0" prefHeight="431.0" prefWidth="769.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

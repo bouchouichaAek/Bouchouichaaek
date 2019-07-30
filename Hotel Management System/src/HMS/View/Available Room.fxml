@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ReservationPANE" prefHeight="430.0" prefWidth="769.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HMS.AvailableRoomController">
+   <children>
+      <TableView fx:id="TableView" layoutX="28.0" layoutY="130.0" prefHeight="285.0" prefWidth="719.0">
+        <columns>
+          <TableColumn fx:id="ColumnRoomType" prefWidth="70.0" text="Room Type" />
+          <TableColumn fx:id="ColumnsRoomNumber" prefWidth="105.0" text="Room Number" />
+            <TableColumn fx:id="ColumnsNumberofpeople" prefWidth="131.0" text="Number Of People" />
+            <TableColumn fx:id="ColumnsFloorNumber" prefWidth="88.0" text="Foor Number" />
+            <TableColumn fx:id="ColumnsPhoneNumber" prefWidth="109.0" text="Phone Number" />
+            <TableColumn fx:id="ColumnsRoomPrice" prefWidth="86.0" text="Room Price" />
+            <TableColumn fx:id="ColumnsRoomStatus" prefWidth="112.0" text="Room Status" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="28.0" layoutY="14.0" prefHeight="106.0" prefWidth="346.0" style="-fx-border-color: #1bba97; -fx-background-color: white; -fx-border-radius: 30px; -fx-background-radius: 30px;">
+         <children>
+            <JFXTextField fx:id="RoomNumber" focusColor="#1bba97" labelFloat="true" layoutX="12.0" layoutY="24.0" prefHeight="25.0" prefWidth="319.0" promptText="Search By Room Number">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="28.0" layoutY="67.0" onAction="#SearchRoom" prefHeight="25.0" prefWidth="110.0" styleClass="ButtonAvailableRoom" stylesheets="@Home.css" text="Search" textFill="#1bba97">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="199.0" layoutY="67.0" onAction="#MakeAvailable" prefHeight="25.0" prefWidth="110.0" styleClass="ButtonAvailableRoom" stylesheets="@Home.css" text="Avialable" textFill="#1bba97">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="401.0" layoutY="14.0" prefHeight="106.0" prefWidth="346.0" style="-fx-border-color: #1bba97; -fx-background-color: white; -fx-background-radius: 30px; -fx-border-radius: 30px;">
+         <children>
+            <JFXCheckBox fx:id="Busy" checkedColor="#1bba97" layoutX="29.0" layoutY="35.0" text="Busy">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="Available" checkedColor="#1bba97" layoutX="228.0" layoutY="35.0" text="Available">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="15.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXButton layoutX="113.0" layoutY="66.0" onAction="#SearchCheckBox" prefHeight="29.0" prefWidth="120.0" styleClass="ButtonAvailableRoom" stylesheets="@Home.css" text="Search" textFill="#1bba97">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

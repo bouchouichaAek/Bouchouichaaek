@@ -1,0 +1,39 @@
+
+.ButtonRservation{
+	-fx-background-color: white ;
+	-fx-border-radius: 50px;
+	-fx-background-radius: 50px;
+	-fx-border-color:  #fca92d;
+	 -fx-border-width: 2px
+	
+}
+
+
+.ButtonAvailableRoom{
+	-fx-background-color: white ;
+	-fx-border-radius: 50px;
+	-fx-background-radius: 50px;
+	-fx-border-color:   #1bba97;
+	 -fx-border-width: 2px
+	
+}
+
+
+
+.ButtonCustomesrInfo{
+	-fx-background-color: white ;
+	-fx-border-radius: 50px;
+	-fx-background-radius: 50px;
+	-fx-border-color:   #2f9df2;
+	 -fx-border-width: 2px
+	
+}
+
+.ButtonEmployee{
+	-fx-background-color: white ;
+	-fx-border-radius: 50px;
+	-fx-background-radius: 50px;
+	-fx-border-color:   black ;
+	 -fx-border-width: 2px
+	
+}

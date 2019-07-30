@@ -1,0 +1,16 @@
+.AdminPane{
+	
+	-fx-background-color: rgb(255,255,255);
+	
+}
+.TextFieldAdmin{
+	-fx-background-fills: #bbbbbb;
+}
+
+.Button{
+	-fx-background-color: rgb(0,0,0);
+	-fx-text-fill: rgb(255,255,255);
+	-fx-background-radius: 50px;
+	-fx-border-radius: 2px;
+	
+}

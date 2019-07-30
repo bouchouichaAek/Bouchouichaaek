@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ReservationPANE" prefHeight="430.0" prefWidth="769.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HMS.CustomersInfoController">
+   <children>
+      <TableView fx:id="TableView" layoutX="28.0" layoutY="130.0" prefHeight="285.0" prefWidth="719.0">
+         <columns>
+            <TableColumn fx:id="ColumName" prefWidth="129.0" text="Name" />
+            <TableColumn fx:id="ColumnEmail" prefWidth="72.0" text="Email" />
+            <TableColumn fx:id="ColumnAdderss" prefWidth="60.0" text="address" />
+            <TableColumn fx:id="ColumnNumber" prefWidth="82.0" text="Phone Number" />
+            <TableColumn fx:id="ColumnNOP" prefWidth="71.0" text="Number Of People" />
+            <TableColumn fx:id="ColumnRoomType" prefWidth="62.0" text="Room Type" />
+            <TableColumn fx:id="ColumnRoomNumber" prefWidth="64.0" text="Room Number" />
+            <TableColumn fx:id="ColumnStartDate" prefWidth="67.0" text="Start Date" />
+            <TableColumn fx:id="ColumnEndDate" prefWidth="57.0" text="End Date" />
+            <TableColumn fx:id="ColumnPrice" prefWidth="53.0" text="Price" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="28.0" layoutY="14.0" prefHeight="106.0" prefWidth="346.0" style="-fx-border-color: #2f9df2; -fx-background-color: white; -fx-border-radius: 30px; -fx-background-radius: 30px;">
+         <children>
+            <JFXTextField fx:id="RoomNumber" focusColor="#1bba97" labelFloat="true" layoutX="12.0" layoutY="24.0" prefHeight="25.0" prefWidth="319.0" promptText="Search By Room Number">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="101.0" layoutY="67.0" onAction="#GetRoomNumber" prefHeight="25.0" prefWidth="110.0" styleClass="ButtonCustomesrInfo" stylesheets="@Home.css" text="Search" textFill="#2f9df2">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="13.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="401.0" layoutY="14.0" prefHeight="106.0" prefWidth="346.0" style="-fx-border-color: #2f9df2; -fx-background-color: white; -fx-background-radius: 30px; -fx-border-radius: 30px;">
+         <children>
+            <JFXButton layoutX="118.0" layoutY="71.0" onAction="#SerachByDate" prefHeight="25.0" prefWidth="110.0" styleClass="ButtonCustomesrInfo" stylesheets="@Home.css" text="Search" textFill="#2f9df2">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXDatePicker fx:id="StartDate" defaultColor="#2f9df2" layoutX="14.0" layoutY="30.0" prefHeight="25.0" prefWidth="137.0" />
+            <JFXDatePicker fx:id="EndDate" defaultColor="#2f9df2" layoutX="187.0" layoutY="30.0" prefHeight="25.0" prefWidth="137.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
